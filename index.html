@@ -1,112 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Abhishek Verma</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Abhishek Verma -avas27</title>
-    <link href="/static/css/main.e166db3b.chunk.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      #avas27 {
+        width: 7vw;
+        height: 15vh;
+        border-radius: 50%;
+        position: relative;
+      }
+      #avas27 > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      #bg,
+      #work,
+      #contact {
+        height: 100vh;
+      }
+      #bgg {
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("h2.ffcea5c8-min.jpg");
+        background-size: cover;
+      }
+      .hr {
+        height: 3px;
+        width: 30vw;
+        background-color: white;
+      }
+      .icon {
+        font-size: 70px;
+      }
+      .img {
+        width: 20vw;
+        height: auto;
+      }
+      .nav {
+        cursor: pointer;
+        transition: all 0.2s;
+        border-bottom: 2px solid transparent;
+      }
+      .nav:hover {
+        border-bottom: 2px solid orange;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: 900px) {
+        .header {
+          font-size: 20px;
+        }
+        .headerSmall {
+          font-size: 12px;
+        }
+        #navB {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script>
-      !(function(i) {
-        function e(e) {
-          for (
-            var r, t, n = e[0], o = e[1], u = e[2], l = 0, f = [];
-            l < n.length;
-            l++
-          )
-            (t = n[l]),
-              Object.prototype.hasOwnProperty.call(a, t) &&
-                a[t] &&
-                f.push(a[t][0]),
-              (a[t] = 0);
-          for (r in o)
-            Object.prototype.hasOwnProperty.call(o, r) && (i[r] = o[r]);
-          for (s && s(e); f.length; ) f.shift()();
-          return c.push.apply(c, u || []), p();
-        }
-        function p() {
-          for (var e, r = 0; r < c.length; r++) {
-            for (var t = c[r], n = !0, o = 1; o < t.length; o++) {
-              var u = t[o];
-              0 !== a[u] && (n = !1);
-            }
-            n && (c.splice(r--, 1), (e = l((l.s = t[0]))));
-          }
-          return e;
-        }
-        var t = {},
-          a = { 1: 0 },
-          c = [];
-        function l(e) {
-          if (t[e]) return t[e].exports;
-          var r = (t[e] = { i: e, l: !1, exports: {} });
-          return i[e].call(r.exports, r, r.exports, l), (r.l = !0), r.exports;
-        }
-        (l.m = i),
-          (l.c = t),
-          (l.d = function(e, r, t) {
-            l.o(e, r) ||
-              Object.defineProperty(e, r, { enumerable: !0, get: t });
-          }),
-          (l.r = function(e) {
-            "undefined" != typeof Symbol &&
-              Symbol.toStringTag &&
-              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
-              Object.defineProperty(e, "__esModule", { value: !0 });
-          }),
-          (l.t = function(r, e) {
-            if ((1 & e && (r = l(r)), 8 & e)) return r;
-            if (4 & e && "object" == typeof r && r && r.__esModule) return r;
-            var t = Object.create(null);
-            if (
-              (l.r(t),
-              Object.defineProperty(t, "default", { enumerable: !0, value: r }),
-              2 & e && "string" != typeof r)
-            )
-              for (var n in r)
-                l.d(
-                  t,
-                  n,
-                  function(e) {
-                    return r[e];
-                  }.bind(null, n)
-                );
-            return t;
-          }),
-          (l.n = function(e) {
-            var r =
-              e && e.__esModule
-                ? function() {
-                    return e.default;
-                  }
-                : function() {
-                    return e;
-                  };
-            return l.d(r, "a", r), r;
-          }),
-          (l.o = function(e, r) {
-            return Object.prototype.hasOwnProperty.call(e, r);
-          }),
-          (l.p = "/");
-        var r = (this.webpackJsonpportfolio = this.webpackJsonpportfolio || []),
-          n = r.push.bind(r);
-        (r.push = e), (r = r.slice());
-        for (var o = 0; o < r.length; o++) e(r[o]);
-        var s = n;
-        p();
-      })([]);</script
-    ><script src="/static/js/2.90a07f63.chunk.js"></script
-    ><script src="/static/js/main.5c3cddbf.chunk.js"></script>
+    <div class="container-fluid position-fixed">
+      <div class="row">
+        <div class="col-12" id="bgg"></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row fixed-top">
+        <div
+          class="col-12 d-flex align-items-center"
+          style="height:20vh;background-color: black;"
+        >
+          <div class="col-1">
+            <div id="avas27">
+              <img src="avas27.5e0c3106.jpg" />
+            </div>
+          </div>
+          <div class="col-6 text-white">
+            <h1 class="header">Abhishek Verma</h1>
+            <h5 class="headerSmall">
+              Full Stack Web Developer &nbsp;|&nbsp; UI / UX Designer
+            </h5>
+          </div>
+          <div class="col-2 offset-2 d-flex " id="navB">
+            <a href="#work" class="nav text-white"><h5>My Work</h5></a>
+            <a href="#contact" class="ml-5 nav text-white"><h5>Contact</h5></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-flex align-items-center" id="bg">
+          <div class="col-6 d-flex flex-column align-items-center">
+            <div class="row">
+              <div class="col-12">
+                <i class="fas fa-paint-brush text-white icon"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 hr mt-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center mt-3 text-white">
+                <h5>
+                  Passionate UI/UX designer<br />
+                  with an aim to convert imagination into reality.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex flex-column align-items-center">
+            <div class="row">
+              <div class="col-12">
+                <i class="fas fa-code text-white icon"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 hr mt-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center mt-3 text-white">
+                <h5>
+                  Enthusiast Front-end and Back-end coder<br />
+                  with clean, efficient and simple coding logic.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12" id="work">
+          <div class="row pt-2 pl-5 pr-5 pb-2">
+            <div class="col-12 text-center text-white bg-dark">
+              <h3>My Work</h3>
+            </div>
+          </div>
+          <div class="row pt-5 pl-5 pr-5 pb-2">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="col-4 d-flex justify-content-center">
+                <img src="Webp.net-gifmaker.gif" class="img" />
+              </div>
+              <div class="col-4 d-flex justify-content-center">
+                <img src="hms.6276454b.gif" class="img" />
+              </div>
+              <div class="col-4 d-flex justify-content-center">
+                <img src="omni.b5d887bb.gif" class="img" />
+              </div>
+            </div>
+          </div>
+          <div class="row pl-5 pr-5">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="col-4 d-flex justify-content-center text-white">
+                <h5>School Management System</h5>
+              </div>
+              <div class="col-4 d-flex justify-content-center text-white">
+                <h5>Hotel Management System</h5>
+              </div>
+              <div class="col-4 d-flex justify-content-center text-white">
+                <h5>Food Ordering Website</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5 pl-5 pr-5 pb-2 mt-5">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="col-4 d-flex justify-content-center">
+                <img src="rest.3760fdc9.gif" class="img" />
+              </div>
+              <div class="col-4 d-flex justify-content-center">
+                <img src="mp.a9f7d6b3.gif" class="img" />
+              </div>
+              <div class="col-4 d-flex justify-content-center">
+                <img src="vann.gif" class="img" />
+              </div>
+            </div>
+          </div>
+          <div class="row pl-5 pr-5">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="col-4 d-flex justify-content-center text-white">
+                <h5>Restaurant Website</h5>
+              </div>
+              <div class="col-4 d-flex justify-content-center text-white">
+                <h5>Music Player</h5>
+              </div>
+              <div class="col-4 d-flex justify-content-center text-white">
+                <h5>e-learning website</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-12 d-flex align-items-center justify-content-center"
+          id="contact"
+        >
+          <div class="row">
+            <div class="col-12 text-center text-white">
+              <h1>
+                I love to work until imagination changes into reality
+              </h1>
+              <h5>Connect with me on</h5>
+              <h1>
+                <a
+                  href="https://www.linkedin.com/in/abhishekvermasn27"
+                  target="_blank"
+                  class="text-white"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/avas27"
+                  target="_blank"
+                  class="text-white"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCfqU1zw2n7_dzWskNOep-Ww"
+                  target="_blank"
+                  class="text-white"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
